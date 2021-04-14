@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Courses{% endblock %}
+{% load static %}
+{% block content %}
+{{block.super}}
+
+{% for st in stu %}
+    <div class="container-fluid">
+        <h3 class="animationActive text-center mt-3">{{st.title}}</h3>
+        <h6 class="text-center mt-3"> "BACHLOR OF COMPUTER APPLICATIONS" </h6>
+        <p class="text-center mt-4">
+            BCA, or Bachelor of Computer Applications is a 3 year undergraduate program in India that deals with the basics of software development and computer applications. From computer programming to networking, everything is included in the BCA syllabus. <br>
+            To take admission, the minimum BCA eligibility is atleast  50% in Class 12 with English as a mandatory subject. Admission is mostly done through entrance examinations like IPU CET, but many colleges like IITM New Delhi take admission based on merit.
+             APPLY NOW
+        </p>
+            <div class="border text-light rounded" style="height: 30px; background-color: green;"><p class="ml-5">{{st.full_form}}</p>
+            </div>
+            
+        <div class="container col-sm-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Course</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Semesters</th>
+                <th scope="col">Fees</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>{{st.title}}</td>
+                <td>{{st.duration}}</td>
+                <td>{{st.semester}}</td>
+                <td>{{st.course_fees}}</td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+{% endfor %}
+            
+{% endblock content %}

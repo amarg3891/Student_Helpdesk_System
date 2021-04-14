@@ -1,0 +1,48 @@
+.card-img-top{
+    height: 100px;
+    width: 90px;
+    margin-left: 90px;
+    padding-top: 10px;
+}
+
+.card-text-center{
+    margin-top: 20px;
+
+}
+/*styling for Flexibility and Convenience*/
+
+.bi-laptop{
+    height: 80px;
+    width: 100px;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+.bi-caret-right-square{
+    height: 70px;
+    width: 65px;
+    margin-top: 60px;
+    margin-left: 160px;
+}
+
+/* style="margin-left: 200px; margin-top: 65px;" width="70px" height="70px" */
+
+.bi-person{
+    height: 70px;
+    width: 70px;
+    margin-top: 65px;
+    margin-left: 140px;
+}
+
+.chairman{
+    height: 400px;
+}
+
+/* Footer */
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: rgb(27, 25, 25);
+    border-top: .05rem solid #e5e5e5;
+  }

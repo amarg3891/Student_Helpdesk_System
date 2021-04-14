@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Syllabus{% endblock %}
+{% load static %}
+{% block content %}
+{{block.super}}
+
+<div class="conatiner">
+    <h2 class="alert-danger mt-3 p-2 shadow">Syllabus :</h2>
+    <div class="row mx-3">
+        <div class="col-sm-6 mt-4">
+            <ul class="list-group" enctype="multipart/form-data">
+            {% for syl in syl %}
+                <li class="list-group-item bg-success">{{syl.title}}</li>
+                <a href="{{syl.my_file.url}}">Download</a>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
